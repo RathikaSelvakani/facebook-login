@@ -1,0 +1,116 @@
+<html>
+  <head>
+	<!--Giving title for the page-->
+	<title>Sign up for facebook</title>
+
+	<!--Link the icon image..Show on title bar-->
+	<link rel="icon" href="images.jpg">
+
+	<!--Link the css external stylesheet-->
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+
+  </head>
+ <body>
+
+	<!--Creating division tag for entire page-->
+	<div class="main-div">
+		<h1>facebook</h1>
+
+		<!--Creating form tag for the use of form elements-->
+		<form name="myform" action="register.php" method="POST">
+
+			<!--Division tag for sign-up page-->
+			<div class="signup">
+
+				<!--Division tag for form heading-->
+		            <div class="form-head">
+			           <h2>Create a new account</h2>
+			           <p>It's quick and easy.</p>
+	                </div>
+
+	             <!--Division tag for creating input elements-->   
+			         <div class="form-input">
+
+			         	<!--Creating half-width class for styling name fields--> 
+				            <div class=half-width>
+				                <input type="text" placeholder="Firstname" name="firstname" required=""/>
+			                </div>
+			                <div class=half-width>
+				                <input type="text" placeholder="Surname" name="surname" required=""/>
+			                </div>
+
+			           <!--Creating full-width class for apply same style for mobile number and password fields-->
+			                <div class="full-width">
+			    	             <input type="number" placeholder="Mobile number or email address" name="mobile" required="">
+			                </div>
+			                <div class="full-width">
+			    	             <input type="password" placeholder="New password" name="password" required="">
+			                </div>
+			    
+                        <!--Label creation for DOB-->
+                        <!--Using select for drop and down the values-->
+			    	        <label class="label-out" name="dob">Date of birth</label>
+			    	            <div class="date">
+			    		           <div class="quat">
+			    	                   <select>
+			    		                   <option value="date">1</option>
+			    	                   </select>
+			                       </div>
+			                       <div class="quat">
+			    	                   <select>
+			    		                   <option value="month">Jan</option>
+			    	                   </select>
+			                       </div>
+			                       <div class="quat">
+			    	                   <select>
+			    		                   <option value="year">2023</option>
+			    	                   </select>
+			                       </div>
+			                    </div>
+
+			            <!--label creation for gender-->
+			            <!--Using radio buttons for gender field selecting any one of the option-->        
+			                <label class="label-out" name="gender">Gender</label>
+			                    <div class="gender">
+			    		            <div class="genre">
+			    			            <div class="radio-btn">
+			    	                        <label class="radio-label">Female</label>
+			    	                            <input type="radio" class="radio-input">
+			                            </div>
+			                        </div>
+			                        <div class="genre">
+			    			            <div class="radio-btn">
+			    	                        <label class="radio-label">Male</label>
+			    	                             <input type="radio" class="radio-input">
+			                            </div>
+			                        </div>
+			                        <div class="genre">
+                                        <div class="radio-btn">
+			    	                         <label class="radio-label">Custom</label>
+			    	                             <input type="radio" class="radio-input">
+			                            </div>
+			                        </div>
+			                    </div>
+
+		<!--Closing form tag-->	                    
+		</form>
+
+		<!--Creating anchor tag for migrate another site-->
+           <div class="para">People who use our service may have uploaded your contact information to Facebook.<a href="http://www.facebook.com">Learn more.</a> </div>
+           <div class="para">By clicking Sign Up, you agree to our <a href="http://www.google.com">Terms,</a> <a href="http://www.facebook.com">Privacy Policy</a> and <a href="http://www.google.com"> Cookies Policy.</a> You may receive SMS notifications from us and can opt out at any time.</div>
+
+           <!--Creating submit-btn class for sign-up button-->
+                <div class="submit-btn">
+           	        <button class="sign-btn">Sign Up</button>
+                </div>
+
+                <!--Account class for styling the statement-->
+                <!--Anchor tag for migrate login page-->
+                    <div class="account">
+                        <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzAyMjkwMzM1LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D" class="log">Already have an account?</a>
+	                </div>
+
+	<!--Closing the main division tag-->                
+        </div>
+    </body>
+</html>
